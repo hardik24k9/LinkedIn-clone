@@ -1,0 +1,39 @@
+.post {
+	background-color: white;
+	padding: 15px;
+	margin-bottom: 12px;
+	border-radius: 10px;
+	/* border: 1px solid lightgray; */
+}
+
+.post__header {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.post__info{
+    margin-left: 10px;
+}
+
+.post__body{
+    overflow-wrap: anywhere; /* it is important to wrap the long horizontal content overflow */
+}
+
+.post__buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 700px) {
+	.post {
+		background-color: white;
+	    padding: 15px;
+	    margin-bottom: 13px;
+	    border-radius: 10px;
+	}
+
+    .post__header {
+        display: flex;
+        margin-bottom: 13px;
+    }
+}

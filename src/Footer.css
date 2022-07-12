@@ -1,0 +1,25 @@
+@media screen and (max-width: 700px) {
+	.footer {
+		background-color: greenyellow;
+		z-index: 999;
+		order: 10;
+		bottom: 0;
+		position: fixed;
+	}
+
+	.footer__options {
+		visibility: visible;
+		display: flex;
+		background-color: #f3f2ef;
+		align-items: center;
+		justify-content: space-around;
+		width: 90vw;
+		margin-left: 15px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
+	.footer__options > HeaderOption {
+		padding: 0px;
+	}
+}

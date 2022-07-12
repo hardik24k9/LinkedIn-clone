@@ -1,0 +1,149 @@
+.sidebar {
+	/* Sticky sidebar stays on top when scroll down */
+	top: 80px;
+	position: sticky;
+	/* sidebar takes up 20% of screen */
+	flex: 0.22;
+	border-radius: 10px;
+	text-align: center;
+	height: fit-content;
+	margin-left: 20px;
+	margin-right: 5px;
+}
+
+.sidebar__avatar {
+	margin-bottom: 10px;
+}
+
+.sidebar__top {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid lightgray;
+	border-bottom: 0px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: white;
+	padding-bottom: 10px;
+}
+
+.sidebar__top > img{
+    width: 100%;
+    height: 60px;
+    margin-bottom: -20px;
+    border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+    object-fit: cover; /* The replaced content is sized to maintain its aspect ratio while filling the element's entire content box */
+}
+
+.sidebar__top > h4{
+    font-size: 13px;
+    color: gray;
+}
+
+.sidebar__top > h2{
+    font-size: 19px;
+}
+
+.sidebar__stats{
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 1px solid Lightgray;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.sidebar__stat{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar__stat > p{
+    color: gray;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.sidebar__statNumber{
+    font-weight: bold;
+    color: #0a66c2 !important;
+}
+
+.sidebar__bottom{
+    padding: 10px;
+    border: 1px solid Lightgray;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.sidebar__recentItem {
+	display: flex;
+	font-size: 13px;
+	color: gray;
+	font-weight: bolder;
+	cursor: pointer;
+	margin-bottom: 5px;
+	padding: 5px;
+}
+
+.sidebar__recentItem:hover {
+	background-color: whitesmoke;
+	border-radius: 10px;
+	cursor: pointer;
+	color: black;
+}
+
+.sidebar__hash{
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+/* for recent keyword */
+.sidebar__bottom > p { 
+	font-size: 13px;
+	padding-bottom: 10px;
+}
+
+@media screen and (max-width: 700px) {
+	.sidebar {
+		/* Remove sticky sidebar on smaller devices */
+		top: 30px;
+		position: relative;
+		order: -1;
+		margin-left: 12px;
+		margin-right: 12px;
+		margin-bottom: 10px;
+	}
+
+	.sidebar__stats {
+		margin-bottom: 15px;
+	}
+
+	.sidebar__bottom {
+		margin-bottom: 50px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.sidebar__bottom > p {
+		display: flex;
+		font-size: 13px;
+		font-weight: bold;
+		margin-left: 5px;
+		padding-bottom: 5px;
+	}
+
+	.sidebar__recentItem {
+		display: flex;
+		font-size: 0.8rem;
+		color: gray;
+		cursor: pointer;
+		margin-bottom: 1px;
+		padding: 1px;
+	}
+}

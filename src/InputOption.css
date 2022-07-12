@@ -1,0 +1,37 @@
+.inputOption {
+	display: flex;
+	align-items: center;
+	margin-top: 15px;
+	color: gray;
+	padding: 10px;
+	cursor: pointer;
+	width: fit-content;
+}
+
+.inputOption:hover {
+	background-color: whitesmoke;
+	border-radius: 10px;
+}
+
+.inputOption > h4 {
+	margin-left: 5px;
+}
+
+@media screen and (max-width: 800px) {
+	.inputOption {
+		flex-direction: column;
+		object-fit: contain;
+
+		padding: 2px 8px;
+	}
+
+	.inputOption > h4 {
+		margin-left: 0px;
+		font-size: 0.75rem;
+	}
+
+	.inputOption > Icon {
+		height: 16px !important; /* using important to override Material UI styles*/
+		width: 16px !important;
+	}
+}
